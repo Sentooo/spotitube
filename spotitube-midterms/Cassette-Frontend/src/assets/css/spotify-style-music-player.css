@@ -1,0 +1,101 @@
+/* spotify-style-music-player.css */
+
+.spotify-music-player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.spotify-music-player.hidden {
+  transform: translateY(100%);
+}
+
+.player-info {
+  display: flex;
+  align-items: center;
+}
+
+.album-cover {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.song-details {
+  flex-grow: 1;
+}
+
+.player-controls {
+  display: flex;
+  align-items: center;
+}
+
+.player-buttons {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.control-button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+  margin-right: 10px;
+  outline: none;
+}
+
+.control-button.active {
+  color: #1db954;
+}
+
+.progress-container {
+  flex-grow: 1;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.progress-bar {
+  height: 4px;
+  background-color: #535353;
+  position: relative;
+}
+
+.progress {
+  height: 100%;
+  background-color: #1db954;
+}
+
+.time-display {
+  display: flex;
+  align-items: center;
+}
+
+.current-time,
+.duration {
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+.close-button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  outline: none;
+}
+
+.close-button:hover {
+  color: #1db954;
+}

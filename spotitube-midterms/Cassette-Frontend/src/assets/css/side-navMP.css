@@ -1,0 +1,104 @@
+/* sidenavMP.css */
+.side-nav-mp {
+  background-color: maroon !important;
+  max-width: 200px !important;
+  min-width: 100px !important;
+}
+
+.side-nav-mp ul li {
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 10px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.side-nav-mp span {
+  margin-left: 10px;
+}
+
+.side-nav-mp li:hover,
+.side-nav-mp li.active {
+  color: #ff0000b3;
+  transform: translateX(5px);
+}
+
+.side-nav-mp li:hover::after {
+  width: 100%;
+}
+
+.side-nav-mp a {
+  text-decoration: none !important;
+}
+
+/* Additional styles specific to SideNavMP */
+.divider-top {
+  width: 100%;
+  border: 2px solid #c40303 !important;
+  margin: 2px 0px 0px;
+}
+
+.playlist-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.library-section {
+  padding: 10px 0;
+}
+
+.playlist-container {
+  overflow-x: hidden;
+  padding: 10px;
+}
+
+.library-header {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.playlist-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  /* Add additional styling as needed for playlist images and names */
+}
+
+.create-playlist-button {
+  background-color: #db0000;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-left: 15px;
+  width: 150px;
+  border: none;
+}
+
+.create-playlist-button:hover {
+  background-color: #d11f1f;
+}
+
+.playlist-button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+}
+
+.playlist-button:focus {
+  outline: none; /* Remove default focus outline */
+}
+
+.playlist-name {
+  color: white;
+  font-size: 12px;
+}
+
+.library-header {
+  color: white;
+}

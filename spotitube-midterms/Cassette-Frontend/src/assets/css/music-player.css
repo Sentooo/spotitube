@@ -1,0 +1,92 @@
+.footer-player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+  border-radius: 5px 5px 0 0;
+}
+
+.footer-player.visible {
+  transform: translateY(0);
+}
+
+.footer-player.hidden {
+  transform: translateY(100%);
+}
+
+.player-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.album-cover {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.song-details h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.song-details p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.player-controls {
+  margin-inline: 22%;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.player-controls button.active {
+  color: #1db954;
+}
+
+.progress-bar {
+  width: 450px; /* Reduced width to make space for time displays */
+  height: 8px;
+  background-color: #555;
+  margin: 2px 0px; /* Adjusted margin for spacing */
+  cursor: pointer;
+  position: relative;
+  border-radius: 10px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #1db954;
+  position: absolute;
+}
+
+.time-display {
+  position: absolute;
+  font-size: 12px;
+  color: #fff;
+  top: 50%; /* Vertically center the time displays */
+  transform: translateY(-50%);
+}
+
+.time-display.left {
+  left: 30%; /* Position to the left of the progress bar */
+}
+
+.time-display.right {
+  right: 30%; /* Position to the right of the progress bar */
+}

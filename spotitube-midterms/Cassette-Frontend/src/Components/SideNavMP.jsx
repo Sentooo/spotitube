@@ -1,0 +1,51 @@
+import React from "react";
+import "../assets/css/side-navMP.css";
+import { Link } from "react-router-dom";
+import playlist from "../assets/img/artist-img.jpg";
+import song from "../assets/img/song.png";
+
+function SideNavMP({ activePage }) {
+  const active = activePage;
+  const navItems = [
+    { text: "Home", link: "/" },
+    { text: "Music", link: "/music" },
+    { text: "Podcasts", link: "/Podcasts" },
+    { text: "Videocasts", link: "/Videocasts" },
+  ];
+
+  return (
+    <nav className="side-nav-mp">
+      <ul className="d-flex flex-column list-unstyled align-items-start gap-4 py-4 px-3 mb-0">
+        {navItems.map((item, index) => (
+          <Link to={item.link} key={index}>
+            <li
+              className={`d-flex align-items-center ${
+                item.text === active ? "active" : ""
+              }`}
+            >
+              <span className="ml-2">{item.text}</span>
+            </li>
+          </Link>
+        ))}
+      </ul>
+      <hr className="divider-top" />
+      {/* Library */}
+      <div className="library-section">
+        <h3 className="library-header">Your Library</h3>
+        <div className="playlist-container">
+          <Link to="/playlist">
+            <button className="playlist-button">
+              <img src={song} alt="Playlist 2" className="playlist-image" />
+              <span className="playlist-name">Playlist</span>
+            </button>
+          </Link>
+        </div>
+        <Link to="/create_playlist">
+          <button className="create-playlist-button">Create Playlist</button>
+        </Link>
+      </div>
+    </nav>
+  );
+}
+
+export default SideNavMP;

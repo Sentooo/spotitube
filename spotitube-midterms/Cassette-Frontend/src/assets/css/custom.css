@@ -1,0 +1,93 @@
+:root {
+  --bg-color: #1e1e1e;
+  --bg-secondary: #101010;
+  --secondary-color: #ff0000;
+}
+
+.bg-main-custom {
+  background-color: var(--bg-color);
+}
+.bg-secondary-custom {
+  background-color: var(--bg-secondary);
+}
+.text-secondary-custom {
+  color: var(--secondary-color);
+}
+.social-logo {
+  width: 1.3rem;
+  aspect-ratio: 1/1;
+}
+.gap-1 {
+  gap: 1rem;
+}
+.gap-2 {
+  gap: 2rem;
+}
+.gap-3 {
+  gap: 3rem;
+}
+.gap-4 {
+  gap: 4rem;
+}
+.label-font {
+  font-size: 0.7rem;
+}
+.fs-custom {
+  font-size: 0.8rem;
+}
+.w-35 {
+  width: 37%;
+  min-width: 375px;
+  max-width: 600px;
+}
+.rounded-custom {
+  border-radius: 2px !important;
+}
+.fs-custom-input {
+  font-size: 0.1rem;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.website-logo {
+  width: 60px;
+  aspect-ratio: 1/1;
+  border: 2px solid rgb(183, 0, 0);
+}
+.border-red {
+  border-top: 1.5px solid rgb(183, 0, 0);
+  background: transparent;
+}
+.btn-custom {
+  background: linear-gradient(to top, black, #800e13);
+  color: white; /* Set text color to white for better contrast */
+  border: none; /* Remove default button border */
+}
+
+.btn-custom:hover {
+  /* Optional: Change the button color on hover */
+  background: linear-gradient(to top, #800e13, black);
+}
+
+.modal-body {
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+}
+.modal-body::-webkit-scrollbar {
+  width: 8px; /* Width of vertical scrollbar */
+}
+
+/* Track */
+.modal-body::-webkit-scrollbar-track {
+  background: transparent; /* Transparent background */
+}
+
+/* Handle */
+.modal-body::-webkit-scrollbar-thumb {
+  background: rgb(150, 147, 147); /* Transparent handle */
+}
+
+/* Handle on hover */
+.modal-body::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.2); /* Semi-transparent handle on hover */
+}

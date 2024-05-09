@@ -1,0 +1,234 @@
+body {
+  background-color: black !important;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+.card-body {
+  background: linear-gradient(
+    to bottom,
+    black,
+    maroon
+  ); /* Apply gradient background */
+  color: white; /* Set text color to white */
+  border-radius: 10px;
+}
+
+/* Additional styles for overall layout */
+.container {
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  border: none;
+  transition: box-shadow 0.3s;
+  border-radius: 0;
+}
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+#viewersChartContainer {
+  height: 300px;
+}
+
+#viewersChartContainer .card {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+#viewersChartContainer .card-body {
+  color: white;
+}
+
+#viewersChart {
+  height: 100%;
+}
+#artistTable tbody tr:nth-child(even) {
+  background-color: #484848; /* Light gray */
+}
+#artistTable tbody tr:nth-child(odd) {
+  background-color: #191919; /* Dark gray */
+}
+#artistTable tbody tr {
+  height: 60px; /* Adjust the height as needed */
+}
+
+.button-container button {
+  margin-left: 10px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+/* Styles for the card */
+.card {
+  border-radius: 8px;
+  animation: fadeInUp 1s ease-in-out; /* Apply animation */
+}
+
+/* Styles for the card body */
+.card-body {
+  border: none;
+}
+
+/* Styles for the card title */
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Additional styles for colors */
+.bg-maroon {
+  background-color: maroon !important;
+  color: white;
+}
+
+.border-black {
+  border: 2px solid black;
+}
+
+#table {
+  background-color: rgb(255, 255, 255);
+  color: white;
+}
+
+/* Style for table header */
+#table1 th,
+#table2 th,
+#table3 th,
+#table4 th {
+  background-color: rgb(173, 0, 0); /* Set background color to black */
+  color: rgb(255, 255, 255); /* Set text color to white */
+}
+
+/* Style for table rows */
+#table1 tr,
+#table2 tr,
+#table3 tr,
+#table4 tr {
+  color: #ffffff; /* Set text color to white */
+  border: Maroon;
+}
+
+/* Alternating background colors for table rows based on row number */
+#table1 tr:nth-child(even) td,
+#table2 tr:nth-child(even) td,
+#table4 tr:nth-child(even) td,
+#table4 tr:nth-child(even) td {
+  background-color: #5a0101; /* Set even row background color */
+  color: white;
+}
+
+#table1 tr:nth-child(odd) td,
+#table2 tr:nth-child(odd) td,
+#table3 tr:nth-child(odd) td,
+#table4 tr:nth-child(odd) td {
+  background-color: #820000; /* Set odd row background color */
+  color: white;
+}
+/* Change the color of the "Showing entries" text to white */
+.dataTables_info {
+  color: #ffffff !important;
+  font-size: 12px;
+}
+
+/* Change the color of the search box text to white */
+.dataTables_filter label {
+  color: #ffffff !important;
+  margin-bottom: 10px;
+}
+.dataTables_filter input[type="search"] {
+  color: white !important;
+}
+
+.dataTables_paginate .paginate_button {
+  color: #ffffff !important;
+}
+.dataTables_paginate .paginate_button.previous,
+.dataTables_paginate .paginate_button.next {
+  color: #ffffff !important;
+}
+.dataTables_paginate .paginate_button {
+  font-size: 10px; /* Adjust the font size as needed */
+  padding: 5px 10px; /* Adjust the padding as needed */
+}
+
+/* Change the size of the "Previous" and "Next" buttons */
+.dataTables_paginate .paginate_button.previous,
+.dataTables_paginate .paginate_button.next {
+  font-size: 12px; /* Adjust the font size as needed */
+  padding: 5px 10px; /* Adjust the padding as needed */
+}
+.dataTables_length label {
+  color: #ffffff !important;
+}
+/* Change the color of the option text within the "Show [number] entries" dropdown menu to white */
+.btn.btn-primary {
+  background-color: rgb(120, 120, 120) !important;
+  border-color: rgb(99, 99, 99) !important;
+  color: white !important;
+}
+
+/* Change the style of the Deactivate button */
+.btn.btn-danger {
+  background-color: rgb(235, 0, 0) !important;
+  color: white !important;
+}
+/* Change the color of the "Previous" button text to white */
+/* Change the color of the "Show [number] entries" text to white */
+#table1_length select option {
+  color: #ffffff !important;
+  background-color: black;
+}
+.dataTables_length label {
+  color: white !important;
+}
+
+/* Change the color of the dropdown icon */
+.dataTables_length .custom-select-toggle::after {
+  color: white !important;
+}
+.dataTables_length select {
+  color: white !important;
+}
+#table1_previous {
+  color: white !important;
+}
+#table1_next {
+  color: white !important;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .navbar-toggler {
+    display: inline-block;
+  }
+
+  .navbar-text {
+    margin-left: auto;
+  }
+
+  .burger-icon {
+    display: inline-block;
+  }
+
+  .sidebar.show {
+    display: block !important;
+  }
+}
